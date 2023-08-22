@@ -59,6 +59,12 @@
                 $('.quick p').stop().show();
                 $('.quick_menu').stop().fadeOut();
             });
+            $('.quick_menu a').click(function(){
+                $('.quick').css('transform', 'rotate(0)');
+                $('.quick figure').stop().hide();
+                $('.quick p').stop().show();
+                $('.quick_menu').stop().fadeOut();
+            });
 
             $('.top').click(function(){
                 $('html, body').animate({
