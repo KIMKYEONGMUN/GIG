@@ -416,7 +416,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 .main_visual {
-    width: 100%;
+    width: 1920px;
     height: 960px;
 }
 .main_visual .mySwiper {
@@ -553,7 +553,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 .cont1 {
-    width: 100%;
+    width: 1920px;
     height: 960px;
     background: url('../img/brand_bg.png') center center / cover repeat-x;
     animation: brand_bg 30s infinite linear;
@@ -667,7 +667,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 .cont2 {
-    width: 100%;
+    width: 1920px;
     height: 960px;
     background: url('../img/area_bg.png') center center / cover no-repeat;
 }
@@ -805,7 +805,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 .cont3 {
-    width: 100%;
+    width: 1920px;
     height: 960px;
     background: url('../img/item_bg.png') center center / cover no-repeat;
 }
@@ -909,7 +909,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 .cont4 {
-    width: 100%;
+    width: 1920px;
     height: 480px;
     background-color: #00005a;
     overflow: hidden;
@@ -959,7 +959,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 footer {
-    width: 100%;
+    width: 1920px;
     background-color: #000025;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
