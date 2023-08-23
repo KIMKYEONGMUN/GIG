@@ -712,7 +712,6 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
     height: 120px;
     line-height: 1.3;
     text-align: center;
-    font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -720,8 +719,10 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 28px;
     z-index: 1;
+}
+.cont2 .inner .list .item .title h3 {
+    font-size: 30px;
 }
 .cont2 .inner .list .item p {
     width: 155px;
