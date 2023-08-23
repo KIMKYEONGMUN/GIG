@@ -116,8 +116,6 @@ body {
     color: #333;
     font-family: 'Pretendard';
     background-color: #00005a;
-    max-width: 1920px;
-    width: 100%;
 }
 img {
     width: 100%;
@@ -416,7 +414,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 .main_visual {
-    width: 1920px;
+    width: 100%;
     height: 960px;
 }
 .main_visual .mySwiper {
@@ -553,7 +551,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 .cont1 {
-    width: 1920px;
+    width: 100%;
     height: 960px;
     background: url('../img/brand_bg.png') center center / cover repeat-x;
     animation: brand_bg 30s infinite linear;
@@ -627,14 +625,14 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
     margin-bottom: 40px;
 }
 .cont1 .right_cont .text .btn_cover {
-    width: 240px;
-    height: 60px;
+    width: 180px;
+    height: 45px;
     position: relative;
     overflow: hidden;
 }
 .cont1 .right_cont .text .btn_cover .btn {
     width: 0;
-    height: 60px;
+    height: 45px;
     background-color: #fff;
     transform: skewX(-45deg);
     position: absolute;
@@ -644,9 +642,9 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 }
 .cont1 .right_cont .text .btn_cover a {
     display: block;
-    width: 240px;
-    height: 60px;
-    line-height: 60px;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
     text-align: center;
     border: 1px solid #eee;
     font-weight: 500;
@@ -667,7 +665,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 .cont2 {
-    width: 1920px;
+    width: 100%;
     height: 960px;
     background: url('../img/area_bg.png') center center / cover no-repeat;
 }
@@ -712,7 +710,6 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
     height: 120px;
     line-height: 1.3;
     text-align: center;
-    border: 2px solid #eee;
     font-size: 24px;
     display: flex;
     justify-content: center;
@@ -721,14 +718,28 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 28px;
+    z-index: 1;
+}
+.cont2 .inner .list .item p {
+    width: 155px;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.8);
     z-index: 1;
 }
 .cont2 .inner .list .item .btn_cover {
-    width: 240px;
-    height: 60px;
+    width: 180px;
+    height: 45px;
     position: absolute;
-    top: 65%;
     left: 50%;
+    bottom: 100px;
     transform: translateX(-50%);
     overflow: hidden;
     z-index: 1;
@@ -740,7 +751,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 }
 .cont2 .inner .list .item .btn_cover .btn {
     width: 0;
-    height: 60px;
+    height: 45px;
     background-color: #fff;
     transform: skewX(-45deg);
     position: absolute;
@@ -750,9 +761,9 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 }
 .cont2 .inner .list .item .btn_cover a {
     display: block;
-    width: 240px;
-    height: 60px;
-    line-height: 60px;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
     text-align: center;
     border: 1px solid #eee;
     font-weight: 500;
@@ -766,17 +777,6 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 }
 .cont2 .inner .list .item .btn_cover a:hover {
     color: #00005a;
-}
-.cont2 .inner .list .item p {
-    width: 155px;
-    line-height: 1.2;
-    font-size: 18px;
-    font-weight: 500;
-    position: absolute;
-    left: 50%;
-    bottom: 40px;
-    transform: translateX(-50%);
-    z-index: 1;
 }
 .cont2 .inner .list .item1 {
     background: url(../img/yangsan.png) center center / cover no-repeat;
@@ -805,7 +805,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 .cont3 {
-    width: 1920px;
+    width: 100%;
     height: 960px;
     background: url('../img/item_bg.png') center center / cover no-repeat;
 }
@@ -909,7 +909,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 .cont4 {
-    width: 1920px;
+    width: 100%;
     height: 480px;
     background-color: #00005a;
     overflow: hidden;
@@ -959,7 +959,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
 
 
 footer {
-    width: 1920px;
+    width: 100%;
     background-color: #000025;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
