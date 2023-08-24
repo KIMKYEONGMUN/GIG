@@ -639,7 +639,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
     transform: skewX(-45deg);
     position: absolute;
     top: 0;
-    left: -30px;
+    left: -25px;
     transition: 0.5s;
 }
 .cont1 .right_cont .text .btn_cover a {
@@ -656,7 +656,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
     transition: 0.5s;
 }
 .cont1 .right_cont .text .btn_cover:hover .btn {
-    width: 300px;
+    width: 230px;
 }
 .cont1 .right_cont .text .btn_cover a:hover {
     color: #00005a;
@@ -759,7 +759,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
     transform: skewX(-45deg);
     position: absolute;
     top: 0;
-    left: -30px;
+    left: -25px;
     transition: 0.5s;
 }
 .cont2 .inner .list .item .btn_cover a {
@@ -776,7 +776,7 @@ header .menu_depth2 .menu_list .menu_item ul li a:hover {
     transition: 0.5s;
 }
 .cont2 .inner .list .item .btn_cover:hover .btn {
-    width: 300px;
+    width: 230px;
 }
 .cont2 .inner .list .item .btn_cover a:hover {
     color: #00005a;
