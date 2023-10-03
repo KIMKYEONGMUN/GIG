@@ -113,6 +113,7 @@ body {
     position: relative;
 }
 .history .inner .list .item:nth-child(even) .left dl dt {
+    order: 1;
     padding-right: 0;
     padding-left: 40px;
 }
