@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Bold.eot');
+    src: url('font/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Bold.woff2') format('woff2'),
+        url('font/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-ExtraBold.eot');
+    src: url('font/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-ExtraBold.woff2') format('woff2'),
+        url('font/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Black.eot');
+    src: url('font/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Black.woff2') format('woff2'),
+        url('font/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-ExtraLight.eot');
+    src: url('font/Pretendard-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-ExtraLight.woff2') format('woff2'),
+        url('font/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Light.eot');
+    src: url('font/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Light.woff2') format('woff2'),
+        url('font/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Medium.eot');
+    src: url('font/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Medium.woff2') format('woff2'),
+        url('font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Regular.eot');
+    src: url('font/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Regular.woff2') format('woff2'),
+        url('font/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-SemiBold.eot');
+    src: url('font/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-SemiBold.woff2') format('woff2'),
+        url('font/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Thin.eot');
+    src: url('font/Pretendard-Thin.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Thin.woff2') format('woff2'),
+        url('font/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    line-height: 1;
+    color: #333;
+    font-family: 'Pretendard';
+    background-color: #00005a;
+    /* min-width: 1920px; */
+    /* width: 100%; */
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+
+.quick {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    z-index: 3;
+    transition: 0.5s;
+}
+.quick p {
+    width: 60px;
+    height: 60px;
+    background-color: #00005a;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.quick p:hover {
+    background-color: #fff;
+    border: 1px solid #00005a;
+    color: #00005a;
+}
+.quick figure {
+    width: 60px;
+    height: 60px;
+    background-color: #00005a;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    display: none;
+}
+.quick figure:hover {
+    background-color: #fff;
+    border: 1px solid #00005a;
+    color: #00005a;
+}
+.quick figure img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+.quick figure img.x1 {
+    opacity: 1;
+}
+.quick figure img.x2 {
+    opacity: 0;
+}
+.quick figure:hover img.x1 {
+    opacity: 0;
+}
+.quick figure:hover img.x2 {
+    opacity: 1;
+}
+.quick_menu {
+    position: fixed;
+    right: 30px;
+    bottom: 120px;
+    z-index: 3;
+    display: none;
+}
+.quick_menu a {
+    display: block;
+    width: 120px;
+    height: 60px;
+    background-color: #00005a;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.quick_menu a:hover {
+    background-color: #fff;
+    border: 2px solid #00005a;
+    color: #00005a
+}
+.top {
+    width: 60px;
+    height: 60px;
+    background-color: #00005a;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transition: 0.5s;
+    display: none;
+}
+.top:hover {
+    background-color: #fff;
+    border: 1px solid #00005a;
+    color: #00005a;
+}
+
+
+
+
+
+header {
+    width: 95%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    transition: 0.7s;
+    z-index: 2;
+}
+header:hover {
+    background-color: #00005a;
+}
+header.on {
+    width: 100%;
+    height: 80px;
+    top: 0;
+}
+header .inner {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .inner h1 {
+    width: 96px;
+    height: 60px;
+}
+header .inner h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header .inner nav .menu_depth1 {
+    display: flex;
+    justify-content: space-between;
+}
+header .inner nav .menu_depth1 li {
+    margin: 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header .lang {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+header .lang::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .lang li {
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #999;
+    cursor: pointer;
+    position: relative;
+}
+header .lang li.on {
+    color: #fff;
+}
+header .lang li.on::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -30%;
+    transform: translateX(-50%);
+}
+
+header .menu_depth2 {
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    display: none;
+}
+header .menu_depth2 .menu_list {
+    display: flex;
+    justify-content: center;
+}
+header .menu_depth2 .menu_list .menu_item {
+    margin: 50px 0;
+    padding: 50px 80px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+header .menu_depth2 .menu_list .menu_item:last-child {
+    border-right: none;
+}
+header .menu_depth2 .menu_list .menu_item figure {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: relative;
+}
+header .menu_depth2 .menu_list .menu_item:hover figure {
+    background-color: #00005a;
+    transform: rotateY(360deg);
+    transition: 0.7s;
+}
+header .menu_depth2 .menu_list .menu_item figure img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .menu_depth2 .menu_list .menu_item p {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+header .menu_depth2 .menu_list .menu_item:hover p {
+    color: #00005a;
+}
+header .menu_depth2 .menu_list .menu_item p::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #00005a;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(-50%);
+}
+header .menu_depth2 .menu_list .menu_item:hover p::after {
+    width: 120px;
+    transition: 0.7s;
+}
+header .menu_depth2 .menu_list .menu_item ul li {
+    line-height: 2;
+    font-size: 18px;
+}
+header .menu_depth2 .menu_list .menu_item ul li a:hover {
+    color: #ff8c00;
+}
+header .menu_depth2 .menu_list .menu_item ul li.menu_history {
+    color: #ff8c00;
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #000025;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 60px 0;
+}
+footer .inner {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .inner a {
+    display: block;
+    width: 122px;
+    height: 77px;
+}

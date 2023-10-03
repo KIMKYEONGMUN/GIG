@@ -1,0 +1,195 @@
+@charset "UTF-8";
+@import url(../../css/common.css);
+
+body {
+    background-color: #fff;
+}
+
+
+
+
+
+.history_visual {
+    width: 100%;
+    height: 480px;
+    background: url('../img/rack.jpg') center center / cover no-repeat;
+    position: relative;
+}
+.history_visual::after {
+    content: '';
+    width: 100%;
+    height: 240px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 100%);
+    position: absolute;
+    bottom: 0;
+}
+.history_visual h2 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 480px;
+}
+
+
+
+
+
+.history {
+    width: 100%;
+    padding-bottom: 100px;
+}
+.history .inner {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+.history .inner .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #00005a;
+    border-bottom: 1px solid #999;
+    padding-bottom: 30px;
+    margin: 50px 0 100px;
+}
+.history .inner .title ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.history .inner .title ul li {
+    font-size: 20px;
+    margin-right: 60px;
+    cursor: pointer;
+    position: relative;
+}
+.history .inner .title ul li.on {
+    color: #ff8c00;
+}
+.history .inner .title ul li::after {
+    content: '';
+    width: 1px;
+    height: 80%;
+    background-color: #999;
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+}
+.history .inner .title ul li:last-child::after {
+    display: none;
+}
+.history .inner .title h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.history .inner .list .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.history .inner .list .item:nth-child(even) .left {
+    order: 1;
+}
+.history .inner .list .item .left dl {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.history .inner .list .item:nth-child(even) .left dl {
+    justify-content: right;
+}
+.history .inner .list .item .left dl dt {
+    width: 100px;
+    color: #ff8c00;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    padding-right: 40px;
+    position: relative;
+}
+.history .inner .list .item:nth-child(even) .left dl dt {
+    padding-right: 0;
+    padding-left: 40px;
+}
+.history .inner .list .item .left dl dd {
+    color: #00005a;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 40px;
+    position: relative;
+}
+.history .inner .list .item:nth-child(even) .left dl dd {
+    text-align: right;
+}
+.history .inner .list .item .left dl dd::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.history .inner .list .item:nth-child(even) .left dl dd::before {
+    left: 100%;
+}
+.history .inner .list .item .left dl dd::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #00005a;
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%) rotate(45deg);
+}
+.history .inner .list .item .left dl:nth-child(even) dd::after {
+    background-color: #ff8c00;
+}
+.history .inner .list .item:nth-child(even) .left dl dd::after {
+    left: calc(100% - 5px);
+}
+
+.history .inner .list .item .right {
+    width: 30%;
+    position: relative;
+}
+.history .inner .list .item .right figure {
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 10px 60px 10px;
+    position: absolute;
+}
+.history .inner .list .item .right figure img {
+    width: 100%;
+    object-fit: cover;
+}
+.history .inner .list .item#history3 .right figure:nth-child(1) {
+    top: -200px;
+    right: 30%;
+    transform: rotate(-5deg);
+    z-index: 1;
+}
+.history .inner .list .item#history3 .right figure:nth-child(2) {
+    top: -150px;
+    right: -20%;
+    transform: rotate(5deg);
+}
+.history .inner .list .item#history2 .right figure:nth-child(1) {
+    top: -200px;
+    right: 30%;
+    transform: rotate(-5deg);
+}
+.history .inner .list .item#history1 .right figure:nth-child(1) {
+    top: -200px;
+    right: 10%;
+    transform: rotate(5deg);
+}

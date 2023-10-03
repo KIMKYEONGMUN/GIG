@@ -1,0 +1,551 @@
+@charset "UTF-8";
+@import url(common.css);
+
+
+
+
+
+.main_visual {
+    width: 100%;
+    height: 960px;
+}
+.main_visual .mySwiper {
+    width: 100%;
+    height: 100%;
+}
+.main_visual .mySwiper .swiper-slide::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main_visual .mySwiper .swiper-slide .text {
+    width: 1440px;
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.main_visual .mySwiper .swiper-slide .text p {
+    display: block;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.main_visual .mySwiper .swiper-slide-active .text p {
+    animation: text 1s;
+    transform: translateY(-50%);
+}
+@keyframes text {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
+.main_visual .inner {
+    width: 1440px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.main_visual .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: auto;
+    position: absolute;
+    top: 650px;
+    left: -40px;
+}
+.main_visual .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-left: 40px;
+}
+.main_visual .swiper-pagination-bullet {
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.5;
+    width: auto;
+    height: auto;
+    position: relative;
+    text-align: left;
+    z-index: 9;
+}
+.main_visual .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 60px;
+}
+.main_visual .swiper-pagination-bullet i {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    z-index: 1;
+    width: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.main_visual .swiper-pagination-bullet-active i {
+    width: 100%;
+}
+.main_visual .swiper-pagination-bullet b {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    z-index: 2;
+    width: 0;
+    height: 1px;
+    background-color: darkorange;
+}
+.main_visual .swiper-pagination-bullet-active b {
+    animation-name: slideprogress;
+    animation-duration: 10s; /* autopaly 시간과 맞춰주기 */
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes slideprogress {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+.main_visual .control {
+    position: absolute;
+    top: 650px;
+    left: 350px;
+}
+.main_visual .control .pause {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.main_visual .control .play {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+.cont1 {
+    width: 100%;
+    height: 960px;
+    background: url('../img/brand_bg.png') center center / cover repeat-x;
+    animation: brand_bg 30s infinite linear;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes brand_bg {
+    0% {
+        background-position: 0 center;
+    }
+    100% {
+        background-position: -1920px center;
+    }
+}
+.cont1 .left_line {
+    width: 1160px;
+    height: 100px;
+    background: url('../img/brand_left_line.png') center center / contain no-repeat;
+    position: absolute;
+    top: 140px;
+    left: -100%;
+    transition: 0.7s;
+}
+.cont1 .left_cont {
+    width: 1070px;
+    height: 480px;
+    background: url('../img/brand_left_cont.png') center center / contain no-repeat;
+    position: absolute;
+    top: 190px;
+    left: -100%;
+    transition: 0.7s 0.5s;
+}
+.cont1 .left_cont p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    line-height: 1.3;
+}
+.cont1 .right_line {
+    width: 1160px;
+    height: 100px;
+    background: url('../img/brand_right_line.png') center center / contain no-repeat;
+    position: absolute;
+    top: 720px;
+    right: -100%;
+    transition: 0.7s 0.5s;
+}
+.cont1 .right_cont {
+    width: 1070px;
+    height: 480px;
+    background: url('../img/brand_right_cont.png') center center / contain no-repeat;
+    position: absolute;
+    top: 290px;
+    right: -100%;
+    transition: 0.7s;
+}
+.cont1 .right_cont .text {
+    padding: 60px 0 60px 340px;
+    color: #fff;
+}
+.cont1 .right_cont .text figure {
+    width: 111px;
+    height: 48px;
+    margin-bottom: 40px;
+}
+.cont1 .right_cont .text p {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+.cont1 .right_cont .text .btn_cover {
+    width: 180px;
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+}
+.cont1 .right_cont .text .btn_cover .btn {
+    width: 0px;
+    height: 45px;
+    background-color: #fff;
+    transform: skewX(-45deg);
+    position: absolute;
+    top: 0;
+    left: -25px;
+    transition: 0.5s;
+}
+.cont1 .right_cont .text .btn_cover a {
+    display: block;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #eee;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.cont1 .right_cont .text .btn_cover:hover .btn {
+    width: 230px;
+}
+.cont1 .right_cont .text .btn_cover a:hover {
+    color: #00005a;
+}
+
+
+
+
+
+.cont2 {
+    width: 100%;
+    height: 960px;
+    background: url('../img/area_bg.png') center center / cover no-repeat;
+}
+.cont2 .inner {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+.cont2 .inner h2 {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 60px;
+    color: #00005a;
+    font-size: 30px;
+}
+.cont2 .inner .list {
+    width: 100%;
+    height: 665px;
+    border: 1px solid #fff;
+    position: relative;
+}
+.cont2 .inner .list .item {
+    width: 240px;
+    height: 100%;
+    border: 1px solid #fff;
+    color: #fff;
+    position: absolute;
+    top: 0;
+}
+.cont2 .inner .list .item::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+.cont2 .inner .list .item.on::after {
+    background-color: rgba(2, 123, 196, 0.7);
+}
+.cont2 .inner .list .item .title {
+    width: 160px;
+    height: 120px;
+    line-height: 1.3;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.cont2 .inner .list .item .title h3 {
+    font-size: 30px;
+}
+.cont2 .inner .list .item p {
+    width: 155px;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+.cont2 .inner .list .item .btn_cover {
+    width: 180px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.7s;
+}
+.cont2 .inner .list .item.on .btn_cover {
+    opacity: 1;
+}
+.cont2 .inner .list .item .btn_cover .btn {
+    width: 0;
+    height: 45px;
+    background-color: #fff;
+    transform: skewX(-45deg);
+    position: absolute;
+    top: 0;
+    left: -25px;
+    transition: 0.5s;
+}
+.cont2 .inner .list .item .btn_cover a {
+    display: block;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #eee;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.cont2 .inner .list .item .btn_cover:hover .btn {
+    width: 230px;
+}
+.cont2 .inner .list .item .btn_cover a:hover {
+    color: #00005a;
+}
+.cont2 .inner .list .item1 {
+    background: url(../img/yangsan.png) center center / cover no-repeat;
+    width: 720px;
+    left: 0;
+    transition: 0.7s;
+}
+.cont2 .inner .list .item2 {
+    background: url(../img/yongin.png) center center / cover no-repeat;
+    left: 720px;
+    transition: 0.7s;
+}
+.cont2 .inner .list .item3 {
+    background: url(../img/busan_newport.png) center center / cover no-repeat;
+    left: 960px;
+    transition: 0.7s;
+}
+.cont2 .inner .list .item4 {
+    background: url(../img/yangsan_icd.png) center center / cover no-repeat;
+    left: 1200px;
+    transition: 0.7s;
+}
+
+
+
+
+
+.cont3 {
+    width: 100%;
+    height: 960px;
+    background: url('../img/item_bg.png') center center / cover no-repeat;
+}
+.cont3 .inner {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+.cont3 .inner h2 {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 60px;
+    color: #fff;
+    font-size: 30px;
+}
+.cont3 .inner .list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cont3 .inner .list .item {
+    display: block;
+    width: 268px;
+}
+.cont3 .inner .list .item figure {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.cont3 .inner .list .item figure::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 125, 198, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    scale: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+.cont3 .inner .list .item:hover figure::after {
+    scale: 1;
+    transform: rotate(180deg);
+    opacity: 1;
+}
+.cont3 .inner .list .item figure .item_hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 1;
+}
+.cont3 .inner .list .item:hover figure .item_hover {
+    opacity: 1;
+}
+.cont3 .inner .list .item figure .item_hover img {
+    width: 35px;
+    height: 35px;
+}
+.cont3 .inner .list .item figure .item_hover p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.cont3 .inner .list .item h3 {
+    margin: 40px 0 30px;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    line-height: 1.1;
+}
+.cont3 .inner .list .item h3::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}
+.cont3 .inner .list .item:hover h3::after {
+    width: 100%;
+    transition: 1.4s;
+}
+.cont3 .inner .list .item ul li {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    line-height: 1.1;
+    margin-bottom: 6px;
+}
+
+
+
+
+
+.cont4 {
+    width: 100%;
+    height: 480px;
+    background-color: #00005a;
+    overflow: hidden;
+    position: relative;
+}
+.cont4 h2 {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 115px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 30px;
+}
+.cont4 .partners {
+    width: max-content;
+    height: 120px;
+    background: url('../img/wave2.png') bottom center / contain repeat-x;
+    display: flex;
+    align-items: center;
+    animation: partners 60s infinite linear;
+}
+@keyframes partners {
+    0% {
+        background-position: center bottom;
+        transform: translateX(0);
+    }
+    100% {
+        background-position: -1920px bottom;
+        transform: translateX(-50%);
+    }
+}
+.cont4 .partners img {
+    width: auto;
+    height: 60px;
+    margin: 0 25px;
+}
+.cont4 .partners_bg {
+    width: 100%;
+    height: 120px;
+    background: rgb(0,0,90);
+    background: radial-gradient(circle, rgba(0,0,90,0) 50%, rgba(0,0,90,1) 90%);
+    position: absolute;
+    top: 51%;
+    left: 0;
+}
