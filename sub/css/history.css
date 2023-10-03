@@ -92,18 +92,18 @@ body {
     align-items: center;
     margin-bottom: 100px;
 }
-.history .inner .list .item:nth-child(even) .left {
+.history .inner .list .item:nth-child(even) .text {
     order: 1;
 }
-.history .inner .list .item .left dl {
+.history .inner .list .item .text dl {
     display: flex;
     justify-content: left;
     align-items: center;
 }
-.history .inner .list .item:nth-child(even) .left dl {
+.history .inner .list .item:nth-child(even) .text dl {
     justify-content: right;
 }
-.history .inner .list .item .left dl dt {
+.history .inner .list .item .text dl dt {
     width: 100px;
     color: #ff8c00;
     font-size: 24px;
@@ -112,22 +112,22 @@ body {
     padding-right: 40px;
     position: relative;
 }
-.history .inner .list .item:nth-child(even) .left dl dt {
+.history .inner .list .item:nth-child(even) .text dl dt {
     order: 1;
     padding-right: 0;
     padding-left: 40px;
 }
-.history .inner .list .item .left dl dd {
+.history .inner .list .item .text dl dd {
     color: #00005a;
     font-size: 20px;
     line-height: 1.5;
     padding: 40px;
     position: relative;
 }
-.history .inner .list .item:nth-child(even) .left dl dd {
+.history .inner .list .item:nth-child(even) .text dl dd {
     text-align: right;
 }
-.history .inner .list .item .left dl dd::before {
+.history .inner .list .item .text dl dd::before {
     content: '';
     width: 1px;
     height: 100%;
@@ -137,10 +137,10 @@ body {
     left: 0;
     transform: translateY(-50%);
 }
-.history .inner .list .item:nth-child(even) .left dl dd::before {
+.history .inner .list .item:nth-child(even) .text dl dd::before {
     left: 100%;
 }
-.history .inner .list .item .left dl dd::after {
+.history .inner .list .item .text dl dd::after {
     content: '';
     width: 10px;
     height: 10px;
@@ -150,18 +150,18 @@ body {
     left: -5px;
     transform: translateY(-50%) rotate(45deg);
 }
-.history .inner .list .item .left dl:nth-child(even) dd::after {
+.history .inner .list .item .text dl:nth-child(even) dd::after {
     background-color: #ff8c00;
 }
-.history .inner .list .item:nth-child(even) .left dl dd::after {
+.history .inner .list .item:nth-child(even) .text dl dd::after {
     left: calc(100% - 5px);
 }
 
-.history .inner .list .item .right {
+.history .inner .list .item .image {
     width: 30%;
     position: relative;
 }
-.history .inner .list .item .right figure {
+.history .inner .list .item .image figure {
     width: 250px;
     height: 350px;
     background-color: #fff;
@@ -169,27 +169,27 @@ body {
     padding: 10px 10px 60px 10px;
     position: absolute;
 }
-.history .inner .list .item .right figure img {
+.history .inner .list .item .image figure img {
     width: 100%;
     object-fit: cover;
 }
-.history .inner .list .item#history3 .right figure:nth-child(1) {
+.history .inner .list .item#history3 .image figure:nth-child(1) {
     top: -200px;
     right: 30%;
     transform: rotate(-5deg);
     z-index: 1;
 }
-.history .inner .list .item#history3 .right figure:nth-child(2) {
+.history .inner .list .item#history3 .image figure:nth-child(2) {
     top: -150px;
     right: -20%;
     transform: rotate(5deg);
 }
-.history .inner .list .item#history2 .right figure:nth-child(1) {
+.history .inner .list .item#history2 .image figure:nth-child(1) {
     top: -200px;
     right: 30%;
     transform: rotate(-5deg);
 }
-.history .inner .list .item#history1 .right figure:nth-child(1) {
+.history .inner .list .item#history1 .image figure:nth-child(1) {
     top: -200px;
     right: 10%;
     transform: rotate(5deg);
